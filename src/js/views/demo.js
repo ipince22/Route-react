@@ -4,20 +4,23 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
+import { Carousel } from "../component/carousel";
 
 export const Demo = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
 		<div className="container">
+			<Carousel />
 			<ul className="list-group">
 				{store.demo.map((item, index) => {
+					var _index = parseInt(index) + 1;
 					return (
 						<li
-							key={index}
+							key={_index}
 							className="list-group-item d-flex justify-content-between"
 							style={{ background: item.background }}>
-							<Link to={"/single/" + index}>
+							<Link to={"/single/" + _index}>
 								<span>Link to: {item.title}</span>
 							</Link>
 							{// Conditional render example
@@ -27,7 +30,7 @@ export const Demo = () => {
 									Check store/flux.js scroll to the actions to see the code
 								</p>
 							) : null}
-							<button className="btn btn-success" onClick={() => actions.changeColor(index, "orange")}>
+							<button className="btn btn-success" onClick={() => actions.changeColor(_index, "orange")}>
 								Change Color
 							</button>
 						</li>

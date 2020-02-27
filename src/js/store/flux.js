@@ -3,12 +3,37 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			demo: [
 				{
-					title: "FIRST",
+					title: "A New Hope",
 					background: "white",
 					initial: "white"
 				},
 				{
-					title: "SECOND",
+					title: "The Empire Strikes Back",
+					background: "white",
+					initial: "white"
+				},
+				{
+					title: " Return of the Jedi",
+					background: "white",
+					initial: "white"
+				},
+				{
+					title: "The Phantom Menace",
+					background: "white",
+					initial: "white"
+				},
+				{
+					title: "Attack of the Clones",
+					background: "white",
+					initial: "white"
+				},
+				{
+					title: "Revenge of the Sith",
+					background: "white",
+					initial: "white"
+				},
+				{
+					title: "The Force Awakens",
 					background: "white",
 					initial: "white"
 				}
