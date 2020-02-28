@@ -4,14 +4,16 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 import "../../styles/demo.scss";
-import { Carousel } from "../component/carousel";
+//import { Carousel } from "../component/carousel";
+import sWarsImage from "../../img/stormtrooper-1343772_1920.jpg";
 
 export const Demo = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="container">
-			<Carousel />
+		<div className="container text-center">
+			{/* <Carousel /> */}
+			<img src={sWarsImage} alt="Start Wars" width="650px" height="400px" />
 			<ul className="list-group">
 				{store.demo.map((item, index) => {
 					var _index = parseInt(index) + 1;
