@@ -1,4 +1,6 @@
-# WebApp boilerplate with React JS
+# React Route JS
+Once you have finished mapping your application views with URLs you can start coding everything, and that is when React-Router comes in!  The best practice is always creating one component called <Layout />that will take care of routing the user to the specific views that it should see, depending on each of the particular URLs.
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
 
 ### Requirements:
